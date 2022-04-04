@@ -7,7 +7,7 @@ const Review = (props) => {
     const { name, id, review, stars, img } = props.review;
     return (
         <div className="col-md-4 my-3">
-            <Card style={{ width: '18rem' }} className="shadow">
+            <Card style={{ width: '18rem', height: "300px" }} className="shadow">
                 <Card.Body>
                     <div className="row align-items-center my-1">
                         <div className="col-6"><Card.Title>{name}</Card.Title></div>
