@@ -5,7 +5,7 @@ import About from './Components/About/About';
 import { Route, Routes } from 'react-router-dom';
 import NotFound from './Components/NotFound/NotFound';
 import Header from './Components/Header/Header';
-import Reviews from './Components/About/Reviews/Reviews';
+import Reviews from './Components/Reviews/Reviews';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Blogs from './Components/Blogs/Blogs';
 

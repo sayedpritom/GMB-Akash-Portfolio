@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import useReviews from '../../Hooks/useReviews';
-import Review from '../../Review/Review';
+import useReviews from '../Hooks/useReviews';
+import Review from '../Review/Review';
 
 const Reviews = (props) => {
     let [reviews, setReviews] = useReviews([]);

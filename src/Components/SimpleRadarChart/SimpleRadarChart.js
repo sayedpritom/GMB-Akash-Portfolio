@@ -4,7 +4,8 @@ import {
     RadarChart,
     PolarGrid,
     PolarAngleAxis,
-    PolarRadiusAxis
+    PolarRadiusAxis,
+    Tooltip
 } from "recharts";
 
 const Dashboard = () => {
@@ -28,6 +29,7 @@ const Dashboard = () => {
             <PolarGrid />
             <PolarAngleAxis dataKey="month" />
             <PolarRadiusAxis />
+            <Tooltip/>
             <Radar
                 name="Gray"
                 dataKey="revenue"

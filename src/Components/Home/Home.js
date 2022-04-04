@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import React from 'react';
 import laptop from '../../Images/rm355-pf-s73-card-laptop-01-mockup.jpg'
-import Reviews from "../About/Reviews/Reviews";
+import Reviews from "../Reviews/Reviews";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
                 </div>
             </div>
             <Reviews onHomePage={true}></Reviews>
-            <Link to="/reviews"><Button>View More</Button></Link>
+            <Link to="/reviews"><Button>See All Reviews</Button></Link>
         </div>
     );
 };

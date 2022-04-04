@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# This is an E-commerce website for Electronic Gadgets & Gears
+
+## These things are Implemented in the project:
+* Custom React Hook 
+* 404 Not found Route
+* Used Custom Link from React Router 
+* Dedicated Review Route for showing more reviews
+* 2 dummy charts in a dashboard route
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
