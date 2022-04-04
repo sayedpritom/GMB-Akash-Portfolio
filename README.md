@@ -7,7 +7,7 @@
 * Dedicated Review Route for showing more reviews
 * 2 dummy charts in a dashboard route
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Website Link: https://imaginative-kleicha-a8c570.netlify.app/
 
 ## Available Scripts
 

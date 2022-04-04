@@ -1,10 +1,11 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import './Review.css'
+import './Review.css';
 
 const Review = (props) => {
     const { name, id, review, stars, img } = props.review;
+
     return (
         <div className="col-md-4 my-3">
             <Card style={{ width: '18rem', height: "300px" }} className="shadow">
@@ -17,11 +18,11 @@ const Review = (props) => {
                             </div>
                         </div>
                     </div>
-                        <hr />
+                    <hr />
                     <Card.Text>
                         {review}
                     </Card.Text>
-                    <hr/>
+                    <hr />
                     <p>Given Rating: <b>{stars} stars</b></p>
                 </Card.Body>
             </Card>

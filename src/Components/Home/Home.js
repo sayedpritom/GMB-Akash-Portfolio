@@ -9,7 +9,7 @@ const Home = () => {
         <div className='container my-5'>
             <div className="row align-items-center">
                 <div className="col-md-6">
-                    <h1>Get your professional laptop <br /> at the best possible price</h1>
+                    <h1><span className="text-primary">Get your professional laptop</span> <br /> at the best possible price</h1>
                     <p>All you need is a laptop or a PC and an Internet connection and you can pretty much do almost anything and create almost any type of company</p>
                     <Button>Learn more</Button>
                 </div>
