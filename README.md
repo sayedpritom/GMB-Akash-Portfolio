@@ -1,13 +1,6 @@
-# This is an E-commerce website for Electronic Gadgets & Gears
+# Getting Started with Create React App
 
-## These things are Implemented in the project:
-* Custom React Hook 
-* 404 Not found Route
-* Used Custom Link from React Router 
-* Dedicated Review Route for showing more reviews
-* 2 dummy charts in a dashboard route
-
-## Website Link: https://imaginative-kleicha-a8c570.netlify.app/
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -75,4 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# product-analysis-website-sayedpritom999" 

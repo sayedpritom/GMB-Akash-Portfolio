@@ -1,8 +1,0 @@
-.Header {
-    display: flex;
-    justify-content: center;
-}
-
-.Header > * {
-    margin: 10px;
-}
