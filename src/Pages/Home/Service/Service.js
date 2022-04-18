@@ -2,8 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Service.css';
 
-const Service = ({service}) => {
-    const {name, img, description, price, id} = service;
+const Service = ({ service }) => {
+    const { name, img, description, price, id } = service;
     const navigate = useNavigate();
 
     const navigateToServiceDetails = id => {
@@ -11,11 +11,12 @@ const Service = ({service}) => {
     }
     return (
         <div className="service">
-            <img className="w-100" src={img} alt="" />
-            <h2>Service {name}</h2>
-            <p>Price: ${price}</p>
-            <p><small>{description}</small></p>
-            <button onClick={() => navigateToServiceDetails(id)}>Book: {name}</button>
+            <div style={{ backgroundImage: `url(${img})` }}className="service-image-container">
+            </div>
+            <h2>{name}</h2>
+            <p className="price">Price: ${price}</p>
+            <p className="service-details"><small>{description}</small></p>
+            <button className="button" onClick={() => navigateToServiceDetails(id)}>Book Now</button>
         </div>
     );
 };

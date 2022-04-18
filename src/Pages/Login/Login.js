@@ -8,7 +8,7 @@ import SocialLogin from './SocialLogin/SocialLogin';
 import Loading from '../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import './Login.css';
 
 const Login = () => {
 
@@ -64,16 +64,16 @@ const Login = () => {
     }
 
     return (
-        <div className="container w-50 mx-auto my-5 border p-5 rounded">
-            <h2 className="text-primary">Please Login to Proceed</h2>
+        <div className="login container w-50 mx-auto my-4 p-5">
+            <h2 className="login-header">Please Login to Proceed</h2>
             <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3 my-4" controlId="formBasicEmail">
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3 my-4" controlId="formBasicPassword">
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button variant="primary" type="submit" className="w-50 mx-auto d-block mb-4">
+                <Button variant="primary" type="submit" className="button button-login my-3 mx-auto">
                     Login
                 </Button>
             </Form>

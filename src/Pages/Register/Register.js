@@ -42,23 +42,25 @@ const Register = () => {
     }
 
     return (
-        <div className="register-form">
-            <h2 className="text-center my-3 text-uppercase text-primary">RegisterPlease Register</h2>
-            <form onSubmit={handleRegister}>
-                <input type="text" name="name" id="" placeholder="Your Name" />
-                <input type="email" name="email" id="email" placeholder="Email Address" required />
-                <input type="password" name="password" id="" placeholder="Password" required />
-                <input onClick={() => setagreement(!agreement)} type="checkbox" name="terms" id="terms" />
-                {/* <label className={agreement ? "text-primary px-2" : "text-danger mx-2"} htmlFor="terms">Accept genius car terms and conditions</label> */}
-                <label className={`mx-2 ${agreement ? "text-primary" : "text-danger"}`} htmlFor="terms">Accept genius car terms and conditions</label>
-                <input
-                    disabled={!agreement}
-                    type="submit"
-                    value="Register"
-                    className="w-50 mx-auto d-block mb-4 btn btn-primary" />
-            </form>
-            <p>Already have an account? <Link to="/login" onClick={handleLogin} className="text-primary text-decoration-none">Login from here</Link></p>
-            <SocialLogin></SocialLogin>
+        <div className="container w-50">
+            <div className="register-form login register p-5">
+                <h2 className="text-center my-3 login-header">Please register </h2>
+                <form onSubmit={handleRegister}>
+                    <input type="text" name="name" id="" placeholder="Your Name" />
+                    <input type="email" name="email" id="email" placeholder="Email Address" required />
+                    <input type="password" name="password" id="" placeholder="Password" required />
+                    <input onClick={() => setagreement(!agreement)} type="checkbox" name="terms" id="terms" />
+                    {/* <label className={agreement ? "text-primary px-2" : "text-danger mx-2"} htmlFor="terms">Accept genius car terms and conditions</label> */}
+                    <label className={`mx-2 ${agreement ? "text-primary" : "text-danger"}`} htmlFor="terms">Accept genius car terms and conditions</label>
+                    <input
+                        disabled={!agreement}
+                        type="submit"
+                        value="Register"
+                        className="button" id="button-register" />
+                </form>
+                <p>Already have an account? <Link to="/login" onClick={handleLogin} className="text-primary text-decoration-none">Login from here</Link></p>
+                <SocialLogin></SocialLogin>
+            </div>
         </div>
     );
 };

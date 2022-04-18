@@ -1,0 +1,30 @@
+.banner {
+    background-color: #FDF9F2;
+}
+
+.slider-container {
+    display: grid;
+    align-items: center;
+    height: auto;
+    padding-bottom: 80px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.slider-image>img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-caption h1 {
+    line-height: 50px;
+
+}
+
+.photographer-name {
+    color: white;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: #ff6b37;
+    line-height: 10px;
+
+}

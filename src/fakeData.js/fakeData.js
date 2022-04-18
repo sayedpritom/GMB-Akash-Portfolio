@@ -1,4 +1,4 @@
-[
+const fakeData  = [
     {
         "id": 1,
         "name": "Photography Workshop",
@@ -66,3 +66,5 @@
 
     }
 ]
+
+export default fakeData;
