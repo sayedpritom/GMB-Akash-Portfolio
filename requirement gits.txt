@@ -3,8 +3,14 @@
 3. extra section
 4. If you reload the protected/private route (after login), this page will not redirect the user to the login page. Instead, it will keep the logged-in user on the protected route.
 
-The basic difference is simple. Authentification is a process that verifies if access should be given to an user or not. On the other hand, authorization is a process which determines what type of information, data & files a user can access. 
+The basic difference is simple. Authentification is a process that verifies if access should be given to a user or not. On the other hand, authorization is a process that determines what type of information, data & files a user can access. 
 
 
-Firebase is a platform backed by google. Which provides multiple services to solve common app development problems. Firebase offer popular services like: Firebase Database, Firebase Cloud Storage, Firebase Cloud Messaging, Firebase Remote Config. 
-Top Alternative of firebase Authentication are: Auth0, MongoDB, Passport, Okta, JSON Web Token, Amazon Cognito, KeyCloak. 
+Firebase is a platform backed by Google. Which provides multiple services to solve common app development problems. Firebase offers popular services like Firebase Database, Firebase Cloud Storage, Firebase Cloud Messaging, and Firebase Remote Config. 
+
+
+Top Alternatives for firebase Authentication are Auth0, MongoDB, Passport, Okta, JSON Web Token, Amazon Cognito, KeyCloak. 
+
+
+Hello there, 
+I'm Pritom. A junior and still in the learning phase web developer. I have a goal of becoming a full-stack web developer in the next 2-to 3 years. The project you're looking at was done as an assignment project in the course of learning web development with Programming Hero. 
