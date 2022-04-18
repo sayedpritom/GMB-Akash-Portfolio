@@ -3,11 +3,7 @@
 }
 
 .slider-container {
-    display: grid;
-    align-items: center;
-    height: auto;
     padding-bottom: 80px;
-    grid-template-columns: 1fr 1fr;
 }
 
 .slider-image>img {

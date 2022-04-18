@@ -18,11 +18,11 @@ const Banner = () => {
             <div className=" container">
                 <Carousel id="home" activeIndex={index} onSelect={handleSelect}>
                     <Carousel.Item>
-                        <div className="slider-container">
-                            <div className="slider-caption">
+                        <div className="slider-container row align-items-center">
+                            <div className="slider-caption col-md-6">
                                 <h1><span className="photographer-name">GMB AKASH</span> <br /> A Bangladeshi Photojournalist at Panos Pictures,London. </h1>
                             </div>
-                            <div className="slider-image">
+                            <div className="slider-image col-md-6">
                                 <img
                                     className="d-block"
                                     src={banner1}
@@ -32,13 +32,13 @@ const Banner = () => {
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="slider-container">
-                            <div className="slider-caption">
+                        <div className="slider-container row align-items-center">
+                            <div className="slider-caption col-md-6">
                                 <h1>
                                     He is Creating <span className="photographer-name">Photography</span> and Stories while helping the people he photographs.
                                 </h1>
                             </div>
-                            <div className="slider-image">
+                            <div className="slider-image col-md-6">
                                 <img
                                     className="d-block"
                                     src={banner2}
@@ -48,11 +48,11 @@ const Banner = () => {
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="slider-container">
-                            <div className="slider-caption">
+                        <div className="slider-container row align-items-center">
+                            <div className="slider-caption col-md-6">
                                 <h1> Akash concentrates on people living on the <span className="photographer-name">Edge</span>  of society around the world. </h1>
                             </div>
-                            <div className="slider-image">
+                            <div className="slider-image col-md-6">
                                 <img
                                     className="d-block"
                                     src={banner3}
