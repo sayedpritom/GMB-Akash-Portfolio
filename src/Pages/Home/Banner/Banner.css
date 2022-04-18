@@ -1,5 +1,5 @@
 .banner {
-    background-color: #FDF9F2;
+    /* background-image: ; */
 }
 
 .slider-container {
@@ -24,7 +24,7 @@
     color: white;
     padding: 0 5px;
     border-radius: 5px;
-    background-color: #ff6b37;
+    background-color: #111111;
     line-height: 10px;
 
 }

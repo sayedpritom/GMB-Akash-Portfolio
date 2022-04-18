@@ -5,7 +5,6 @@ import banner1 from '../../../Images/banner/banner1.png';
 import banner2 from '../../../Images/banner/banner2.png';
 import banner3 from '../../../Images/banner/banner3.png';
 
-
 const Banner = () => {
 
     const [index, setIndex] = useState(0);

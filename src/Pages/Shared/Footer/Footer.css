@@ -1,3 +1,18 @@
 .footer{
-    background-color: #111111;
+    border-top: 1px solid #979797;
+    color: #111111;
+}
+
+.text-copy-right {
+    margin-top: 120px;
+}
+
+.logo-icon{
+    display: block;
+    width: 25px;
+    height: auto;
+}
+
+.footer-social-media {
+    width: 50px;
 }

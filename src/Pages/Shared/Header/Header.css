@@ -1,3 +1,8 @@
+.header {
+    border-bottom: 1px solid #ccc1ad91;
+    margin-bottom: 50px;
+}
+
 .logo > img {
     width: 55px;
     height: 55px;
@@ -14,12 +19,10 @@
     color: #111111;
     padding: 30px 0;
 }
-.nav > .nav-links {
-    color: #111111;
-    margin: 10px 10px;
-    vertical-align: center;
-    text-decoration: none;
-    padding: 10px;
+.user-profile-picture {
+    width: 35px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .nav > .button-container {
@@ -32,7 +35,7 @@
     text-decoration: none;
     display: block;
     margin-left: auto;
-    background-color: #111111;
+    background-color: #111111 !important;
     color: white;
     font-weight: 600;
     padding: 10px 20px;

@@ -1,3 +1,7 @@
+.register-container {
+    min-height: 100vh;
+}
+
 .register-form {
     display: block;
     margin: 25px auto;

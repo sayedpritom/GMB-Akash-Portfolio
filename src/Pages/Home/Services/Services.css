@@ -6,8 +6,9 @@
 
 .services-title {
     color: #111111;
-    border-bottom: 5px solid #ff6737;
+    border-bottom: 3px solid #F6CC7C;
     width: 150px;
+    padding-bottom: 7px;
 }
 
 .services-container {

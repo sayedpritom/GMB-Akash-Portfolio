@@ -64,24 +64,26 @@ const Login = () => {
     }
 
     return (
-        <div className="login container w-50 mx-auto my-4 p-5">
-            <h2 className="login-header">Please Login to Proceed</h2>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3 my-4" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
-                </Form.Group>
-                <Form.Group className="mb-3 my-4" controlId="formBasicPassword">
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
-                </Form.Group>
-                <Button variant="primary" type="submit" className="button button-login my-3 mx-auto">
-                    Login
-                </Button>
-            </Form>
-            {errorElement}
-            <p>New to genius car? <Link to="/register" className="text-primary text-decoration-none" onClick={navigateRegister}>Please register</Link>  </p>
-            <p>Forgot Password? <button className="btn btn-link text-decoration-none" onClick={resetPassword}>Reset Password</button>  </p>
-            <SocialLogin></SocialLogin>
-            <ToastContainer />
+        <div className="login-container">
+            <div className="login container w-50 mx-auto my-4 p-5">
+                <h2 className="login-header">Please Login to Proceed</h2>
+                <Form onSubmit={handleSubmit}>
+                    <Form.Group className="mb-3 my-4" controlId="formBasicEmail">
+                        <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                    </Form.Group>
+                    <Form.Group className="mb-3 my-4" controlId="formBasicPassword">
+                        <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                    </Form.Group>
+                    <Button variant="primary" type="submit" className="button button-login my-3 mx-auto">
+                        Login
+                    </Button>
+                </Form>
+                {errorElement}
+                <p>New to genius car? <Link to="/register" className="text-primary text-decoration-none" onClick={navigateRegister}>Please register</Link>  </p>
+                <p>Forgot Password? <button className="btn btn-link text-decoration-none" onClick={resetPassword}>Reset Password</button>  </p>
+                <SocialLogin></SocialLogin>
+                <ToastContainer />
+            </div>
         </div>
     );
 };

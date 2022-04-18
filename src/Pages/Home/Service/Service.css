@@ -37,7 +37,7 @@
 
 .button {
     width: 150px;
-    background-color: #ff6737;
+    background-color: #1d1d1d;
     border-radius: 10px;
     border: none;
     padding: 10px 0;
@@ -45,7 +45,7 @@
     font-weight: 700;
 }
 .button:hover {
-    background-color: #ff3c00;
+    background-color: #000000;
 }
 
 /* Hover styles */
@@ -54,7 +54,7 @@
 }
 
 .service:hover > h2 {
-    color: #ff6737;
+    color: #000000;
     font-weight: bold;
 }
 

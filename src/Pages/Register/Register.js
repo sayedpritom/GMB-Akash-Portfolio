@@ -42,7 +42,7 @@ const Register = () => {
     }
 
     return (
-        <div className="container w-50">
+        <div className="register-container container w-50">
             <div className="register-form login register p-5">
                 <h2 className="text-center my-3 login-header">Please register </h2>
                 <form onSubmit={handleRegister}>
