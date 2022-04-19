@@ -14,3 +14,8 @@ Top Alternatives for firebase Authentication are Auth0, MongoDB, Passport, Okta,
 
 Hello there, 
 I'm Pritom. A junior and still in the learning phase web developer. I have a goal of becoming a full-stack web developer in the next 2-to 3 years. The project you're looking at was done as an assignment project in the course of learning web development with Programming Hero. 
+
+
+________________________________________________________________________________________________
+
+
