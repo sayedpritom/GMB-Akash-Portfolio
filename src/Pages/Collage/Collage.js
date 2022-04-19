@@ -32,6 +32,7 @@ import image29 from '../../Images/collage/29.png';
 import image30 from '../../Images/collage/30.png';
 
 const Collage = () => {
+    // This collage is made with bootstrap grid
     return (
         <div className="collage">
             <div className="container">

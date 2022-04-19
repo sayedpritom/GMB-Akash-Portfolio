@@ -29,7 +29,7 @@
 .programme-description {
     line-height: 22px;
     color: #636363;
-    width: 600px;
+    max-width: 600px;
     margin: 15px auto;
 }
 

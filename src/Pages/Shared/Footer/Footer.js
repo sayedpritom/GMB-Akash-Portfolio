@@ -7,8 +7,11 @@ import ig from '../../../Images/social/ig-black.png';
 import yt from '../../../Images/social/yt-black.png';
 
 const Footer = () => {
+    
+    // Get the dynamic date
     const date = new Date();
     const currentDate = date.getFullYear();
+
     return (
         <footer id="footer" className="footer text-dark pt-5">
             <div className="container mt-4">

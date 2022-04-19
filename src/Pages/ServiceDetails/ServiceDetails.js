@@ -6,6 +6,7 @@ import './ServiceDetails.css';
 const ServiceDetails = () => {
     const { serviceId } = useParams();
 
+    // get get data by find method using the serviceId
     const { name, img, description, price } = fakeData.find(data => data.id === parseInt(serviceId))
 
 

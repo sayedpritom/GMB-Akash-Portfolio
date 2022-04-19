@@ -3,6 +3,7 @@ import './About.css';
 
 const About = () => {
     return (
+        // This page tells about the developer
         <div className="about">
             <div className="container">
                 <div className="about-box">

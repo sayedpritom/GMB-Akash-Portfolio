@@ -9,12 +9,15 @@ import './Header.css';
 import logo from '../../../Images/logo.png';
 
 const Header = () => {
+
+    // get the currently signed in user
     const [user] = useAuthState(auth);
 
+    // logout method from react firebase hooks
     const logout = () => {
         signOut(auth);
     };
-    console.log(user);
+
     return (
         <div className="header">
             <Navbar bg="none" expand="lg">
@@ -35,7 +38,7 @@ const Header = () => {
                         </Nav>
                         <Form className="d-flex">
                             <div className="button-container d-flex align-items-center">
-                                <Button variant="link" className="text-decoration-none text-dark">{user?.displayName}</Button>
+                                <Button variant="link" as={Link} to="/CurrentlyLoggedInUser" className="text-decoration-none text-dark">{user?.displayName}</Button>
                                 {user ? <Button variant="link" className="text-decoration-none text-dark" onClick={() => logout()}>Log Out</Button> : <Nav.Link as={Link} className="nav-links" to="/login"><Button variant="link" className="text-decoration-none text-dark">Login</Button></Nav.Link>}
                             </div>
                         </Form>

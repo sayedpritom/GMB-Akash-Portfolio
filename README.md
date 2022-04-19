@@ -1,4 +1,4 @@
-# GMB Akash's Portfolio Photography Website
+# GMB Akash's Photography Portfolio Website
 ## Website Link: https://gmb-akash.web.app
 
 ## Website features, functionalities & specs:
@@ -14,6 +14,13 @@
 * Implemented 2 extra login options.
 * Implemented conditional logout button on the header 
 * Implemented blog & about me & 404 Routes
+
+## Technologies (frameworks, libraries) used in this project.:
+* Html, css
+* JavaScript
+* React
+* React bootstrap
+* Firebase for authentication
 
 ### `npm start`
 

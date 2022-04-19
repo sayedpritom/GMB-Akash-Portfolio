@@ -14,6 +14,7 @@ const Banner = () => {
     };
 
     return (
+        // Bootstrap carousel is used here
         <div className="banner">
             <div className=" container">
                 <Carousel id="home" activeIndex={index} onSelect={handleSelect}>

@@ -6,30 +6,34 @@ import auth from '../../firebase.init';
 import SocialLogin from '../Login/SocialLogin/SocialLogin';
 
 const Register = () => {
-    const [agreement, setagreement] = useState(false);
+
+    // terms & conditions checkbox state
+    const [agreement, setAgreement] = useState(false);
+
+    // createUserWithEmailAndPassword hook from react firebase hooks
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+    // updateProfile hook from react firebase hooks
     const [updateProfile, updating, error1] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
 
+    // switches to login component
     const handleLogin = () => {
         navigate('/login')
     }
 
+    // register new user function  
     const handleRegister = async (event) => {
         event.preventDefault();
-        // const email = event.target.email.value;
-        // const name = event.target.name.value;
-        // const password = event.target.password.value;
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-        // const terms  =event.target.terms.checked;
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
@@ -37,29 +41,28 @@ const Register = () => {
         navigate('/home')
     }
 
-    if (user) {
-        console.log('user', user)
-    }
-
     return (
-        <div className="register-container container w-50">
-            <div className="register-form login register p-5">
-                <h2 className="text-center my-3 login-header">Please register </h2>
-                <form onSubmit={handleRegister}>
-                    <input type="text" name="name" id="" placeholder="Your Name" />
-                    <input type="email" name="email" id="email" placeholder="Email Address" required />
-                    <input type="password" name="password" id="" placeholder="Password" required />
-                    <input onClick={() => setagreement(!agreement)} type="checkbox" name="terms" id="terms" />
-                    {/* <label className={agreement ? "text-primary px-2" : "text-danger mx-2"} htmlFor="terms">Accept genius car terms and conditions</label> */}
-                    <label className={`mx-2 ${agreement ? "text-primary" : "text-danger"}`} htmlFor="terms">Accept genius car terms and conditions</label>
-                    <input
-                        disabled={!agreement}
-                        type="submit"
-                        value="Register"
-                        className="button" id="button-register" />
-                </form>
-                <p>Already have an account? <Link to="/login" onClick={handleLogin} className="text-primary text-decoration-none">Login from here</Link></p>
-                <SocialLogin></SocialLogin>
+        <div className="register-container container">
+            <div className="container">
+                <div className="row">
+                    <div className="register-form login register col-11 col-sm-10 col-lg-8 p-5">
+                        <h2 className="text-center my-3 login-header">Please register </h2>
+                        <form onSubmit={handleRegister}>
+                            <input type="text" name="name" id="" placeholder="Your Name" />
+                            <input type="email" name="email" id="email" placeholder="Email Address" required />
+                            <input type="password" name="password" id="" placeholder="Password" required />
+                            <input onClick={() => setAgreement(!agreement)} type="checkbox" name="terms" id="terms" />
+                            <label className={`mx-2 ${agreement ? "text-primary" : "text-danger"}`} htmlFor="terms">Accept our terms and conditions</label>
+                            <input
+                                disabled={!agreement}
+                                type="submit"
+                                value="Register"
+                                className="button" id="button-register" />
+                        </form>
+                        <p>Already have an account? <Link to="/login" onClick={handleLogin} className="text-primary text-decoration-none">Login from here</Link></p>
+                        <SocialLogin></SocialLogin>
+                    </div>
+                </div>
             </div>
         </div>
     );
