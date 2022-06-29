@@ -20,6 +20,7 @@
 * JavaScript
 * React
 * React bootstrap
+* React Router
 * Firebase for authentication
 
 
